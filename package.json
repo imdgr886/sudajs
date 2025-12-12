@@ -1,0 +1,34 @@
+{
+  "name": "sudajs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ci:publish": "pnpm publish -r",
+    "lint": "eslint \"apps/**/*.ts\" \"packages/**/*.ts\"",
+    "lint:fix": "eslint \"apps/**/*.ts\" \"packages/**/*.ts\" --fix",
+    "changeset": "changeset",
+    "changeset:status": "changeset status",
+    "changeset:version": "changeset version",
+    "changeset:publish": "changeset publish",
+    "release": "pnpm run changeset:version && git add . && git commit -m 'chore(release): version packages' && git push origin master --follow-tags && pnpm run changeset:publish"
+  },
+  "keywords": [],
+  "author": "",
+  "packageManager": "pnpm@10.22.0",
+  "devDependencies": {
+    "@changesets/cli": "^2.29.7",
+    "@types/node": "^24.10.1",
+    "@typescript-eslint/eslint-plugin": "^6.2.0",
+    "@typescript-eslint/parser": "^6.2.0",
+    "eslint": "^8.57.1",
+    "eslint-config-taro": "4.1.8",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-react": "^7.8.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

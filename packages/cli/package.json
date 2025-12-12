@@ -1,0 +1,41 @@
+{
+  "name": "@sudajs/cli",
+  "version": "0.0.1",
+  "description": "Example CLI built with Commander + TypeScript",
+  "bin": {
+    "sudacli": "bin/sudacli"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "stubs",
+    "build-stubs"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc",
+    "dev": "ts-node src/index.ts",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix"
+  },
+  "prettier": "@sudajs/runtime/prettier.json",
+  "author": "you",
+  "dependencies": {
+    "chokidar": "^4.0.3",
+    "commander": "^14.0.2",
+    "fs-extra": "^11.3.2",
+    "inquirer": "^13.0.1"
+  },
+  "devDependencies": {
+    "@tarojs/shared": "4.1.8",
+    "@types/node": "^24.10.1",
+    "lodash-es": "^4.17.21",
+    "rimraf": "^5.0.0"
+  },
+  "peerDependencies": {
+    "@sudajs/runtime": "workspace:*"
+  }
+}

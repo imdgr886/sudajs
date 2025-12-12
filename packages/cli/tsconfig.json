@@ -1,0 +1,14 @@
+{
+  "extends": "@sudajs/runtime/tsconfig.base.json",
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "dist",
+    "typeRoots": ["node_modules/@types", "src/types"],
+    "rootDir": "./src",
+    "module": "nodenext",
+    "moduleResolution": "nodenext"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["stubs/**/*"]
+}

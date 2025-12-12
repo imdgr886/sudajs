@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "rootDir": "./src",
+    "typeRoots": [
+      //"node_modules/@types"
+      //"node_modules/@tarojs/components/types",
+      //"node_modules/@tarojs/helper/types"
+    ]
+  },
+  "include": ["src/**/*", "./types"],
+  "exclude": ["node_modules"]
+}

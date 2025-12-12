@@ -1,0 +1,16 @@
+{
+  "name": "首页",
+  "sections": {
+    "image-banner": {
+      "type": "image-banner",
+      "settings": {
+        "images": [
+          "https://storage.360buyimg.com/jdc-article/NutUItaro34.jpg",
+          "https://storage.360buyimg.com/jdc-article/NutUItaro2.jpg",
+          "https://storage.360buyimg.com/jdc-article/welcomenutui.jpg",
+          "https://storage.360buyimg.com/jdc-article/fristfabu.jpg"
+        ]
+      }
+    }
+  }
+}
