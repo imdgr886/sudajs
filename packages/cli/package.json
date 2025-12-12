@@ -11,8 +11,7 @@
   "files": [
     "bin",
     "dist",
-    "stubs",
-    "build-stubs"
+    "stubs"
   ],
   "scripts": {
     "clean": "rimraf dist",
