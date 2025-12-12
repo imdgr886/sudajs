@@ -1,5 +1,11 @@
 # @sudajs/cli
 
+## 1.0.2
+
+### Patch Changes
+
+- fix files in package.json
+
 ## 1.0.1
 
 ### Patch Changes
