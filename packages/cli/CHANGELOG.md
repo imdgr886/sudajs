@@ -1,5 +1,11 @@
 # @sudajs/cli
 
+## 1.0.1
+
+### Patch Changes
+
+- new version
+
 ## 1.0.0
 
 ### Minor Changes
