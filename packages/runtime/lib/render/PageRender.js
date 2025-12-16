@@ -2,10 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.PageRenderer = PageRenderer;
 const jsx_runtime_1 = require("react/jsx-runtime");
-// import { View } from "@tarojs/components";
 const SectionRender_1 = require("./SectionRender");
 function PageRenderer({ page }) {
-    return ((0, jsx_runtime_1.jsx)(jsx_runtime_1.Fragment, { children: page.order.map((id) => {
+    return ((0, jsx_runtime_1.jsx)(jsx_runtime_1.Fragment, { children: ((page === null || page === void 0 ? void 0 : page.order) || []).map((id) => {
             const sec = page.sections[id];
             if (!sec)
                 return null;

@@ -1,6 +1,6 @@
 {
   "name": "@sudajs/cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Example CLI built with Commander + TypeScript",
   "bin": {
     "sudacli": "bin/sudacli"
