@@ -1,23 +1,15 @@
-// import { View } from "@tarojs/components";
 import { SectionRenderer } from "./SectionRender";
 
-export type PageJSON = {
+export type PageJson = {
   name: string;
-  sections: Record<
-    string,
-    {
-      type: string;
-      settings?: Record<string, any>;
-      blocks?: Record<string, any>;
-    }
-  >;
-  order: string[];
+  sections: Record<string, any>;
+  order?: string[];
 };
 
-export function PageRenderer({ page }: { page: PageJSON }) {
+export function PageRenderer({ page }: { page: PageJson }) {
   return (
     <>
-      {page.order.map((id) => {
+      {(page?.order || []).map((id) => {
         const sec = page.sections[id];
         if (!sec) return null;
         return (
